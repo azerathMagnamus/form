@@ -11,7 +11,7 @@ player = {
   w: 20,
   h: 20,
 };
-console.log(player.x);
+
 requestAnimationFrame(draw);
 
 // Main loop
@@ -31,15 +31,13 @@ function draw() {
   }
   stroke("green");
   rect(player.x, player.y, player.w, player.h, "stroke");
-  document.addEventListener("click", handlerdraw);
+ 
 
   requestAnimationFrame(draw);
 }
-document.addEventListener("mousedown", handlerdraw);
 
-function handlerdraw() {
-  for (let p = 0; p < blocks.length; p++) {}
-}
+
+
 
 // removes or adds a blocks particle via a up and down keys
 setInterval(remove, 3000);
